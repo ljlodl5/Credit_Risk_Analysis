@@ -6,7 +6,7 @@ Before making that decision, we need to analyze the best predictive model in ord
 or attempt to achieve results that do not align with the expected company experience.  
 
 As a side note one can draw a parallel searching for optimal model selection is like making orange juice with multiple different-sized mesh 'filters'. The consumer (much like a low risk-adverse organization) may prefer no pulp, or the individual (or high-risk adverse organization) may prefer pulp. 
-Too much filtering/decisioning, or too little filtering/desisioning, between models (or mesh components) can produce an undesireable result for the consumer/organization. In some cases it may be okay to have false reads/microns of pulp in a pulp free container, or false high-risk applications amid a low-risk pool. It can become quite expensive and time consuming 
+Too much filtering/decisioning, or too little filtering/decisioning, between models (or mesh components) can produce an undesireable result for the consumer/organization. In some cases it may be okay to have false reads/microns of pulp in a pulp-free container, or false high-risk applications amid a low-risk pool. It can become quite expensive and time consuming 
 to manage a model/product with a return that has near 0 parts outside of true positives and negatives. And if the consumer can't feel it between the teeth, well it may be time to pick the mesh filter/model and use it going forward and allow some false-reads to go through.    
 Therefore, it is important to choose the model that predicts the appropriate dependency in a timely and cost-effective manner.   
 
