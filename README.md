@@ -2,12 +2,12 @@
 
 ## Overview 
 The purpose of the challenge is to use supervised models to determine classification of customer loan risk (low vs. high) in order for an organization to determine whether and under what terms to extend credit to an individual or cohort. 
-Before making that decision, we need to analyze the best predictive and accuracy model in order to ensure that decisions made are based on an appropriate sensitivity (true positives and negatives) and that oversampling or undersampling of data points does not constrain resources (time/$),    
-or muddy the results the company is wishing to exercise.  
+Before making that decision, we need to analyze the best predictive model in order to ensure that decisions made are based on an appropriate sensitivity (true positives and negatives) and that oversampling or undersampling of data points does not constrain resources (time/$),    
+or attempt to achieve results that do not align with the expected company experience.  
 
-As a side note one can liken optimal model selection to making orange juice and having multiple different-sized mesh 'filters' available. The consumer (much like a lower credit risk-adverse organization) may prefer no pulp, or the individual (or higher-risk adverse organization) may prefer pulp. 
-Too much filtering/decisioning, or too little filtering/desisioning, between models (or mesh components) can produce an undesireable result for the consumer/organization. In some cases it may be okay to have false reads/microns of pulp in a pulp free container, or a few high-risk applications amid a low-risk pool. It can become quite expensive and time consuming 
-to manage a model/product with a return that has near 0 parts outside of true positives and negatives. And if the consumer can't feel it between the teeth, well it may be time to pick the mesh filter/model and use it going forward and allow some few false-reads to go through.    
+As a side note one can draw a parallel searching for optimal model selection is like making orange juice with multiple different-sized mesh 'filters'. The consumer (much like a low risk-adverse organization) may prefer no pulp, or the individual (or high-risk adverse organization) may prefer pulp. 
+Too much filtering/decisioning, or too little filtering/desisioning, between models (or mesh components) can produce an undesireable result for the consumer/organization. In some cases it may be okay to have false reads/microns of pulp in a pulp free container, or false high-risk applications amid a low-risk pool. It can become quite expensive and time consuming 
+to manage a model/product with a return that has near 0 parts outside of true positives and negatives. And if the consumer can't feel it between the teeth, well it may be time to pick the mesh filter/model and use it going forward and allow some false-reads to go through.    
 Therefore, it is important to choose the model that predicts the appropriate dependency in a timely and cost-effective manner.   
 
 ## Results 
@@ -48,7 +48,7 @@ This begs the question on how far does a company need to spend in $/time to find
 As stated above having microns of pulp among gallons or orange juice can be perfectly adequate for selling 'pulp free' juice. A quest for total precision and accuracy may not be necessary in order for a company to act.  
 
 When looking at the ensembles: Balanced Random Forest and Easy Ensemble the accuracy rates go up ~80% and 93%, respectively but the precision score is low, and thus the F1 score remains low as well. 
-If time and cost were not an option and I was an extremely low-risk company, then I may be more inclined to choose the Easy Ensemble model as accuracy and F1 for both low and high risk is a little higher, though it is noteworthy that it takes longer and greater $ for the models to execute and may not be worth the small benefit of higher precision or sensitivity.
+If the company had unlimited resources and was an extremely low-risk company, then I may be more inclined to choose the Easy Ensemble model as accuracy and F1 for both low and high risk is a little higher, though it is noteworthy that it takes longer and greater $ for the models to execute and may not be worth the small benefit of higher precision or sensitivity.
 
 It is possible other values needs to be considered in order to glean greater precision, or that a company can make allowances for the expected smaller % of high-risk lenders. 
 A parallel demonstration is assessment of risk in insurance companies. For example, a life insurance company is going to take on high-risk individuals at a premium price, as long as they accept enough applications from the lower-risk pool as offet, or reinsure the risk.
