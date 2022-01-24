@@ -44,14 +44,14 @@ In the over and under sampling models (SMOTE, Random, Cluster) and over/under sa
 In addition, the precision value is extremely low for high-risk, lending F1 (sensitivity to precision comparison) to be extremely low for all models when it comes to evaluating high risk so there are a lot of false values occuring, but the pool is virtually skewed toward low-risk creditors regardless. 
 The expectation is that a company is trying to make sound loans, or sound terms on loans--not exactly a decision requiring extreme precision or sensitivity.  
 
-This begs the question on how far does a company needs to go in cost/time to find a sensitivity score or F1 high enough for a small pool of high-risk individuals?
+This begs the question on how far does a company need to spend in $/time to find a sensitivity score or F1 high enough for a small pool of high-risk individuals?
 As stated above having microns of pulp among gallons or orange juice can be perfectly adequate for selling 'pulp free' juice. A quest for total precision and accuracy may not be necessary in order for a company to act.  
 
 When looking at the ensembles: Balanced Random Forest and Easy Ensemble the accuracy rates go up ~80% and 93%, respectively but the precision score is low, and thus the F1 score remains low as well. 
 If time and cost were not an option and I was an extremely low-risk company, then I may be more inclined to choose the Easy Ensemble model as accuracy and F1 for both low and high risk is a little higher, though it is noteworthy that it takes longer and greater $ for the models to execute and may not be worth the small benefit of higher precision or sensivity.
 
 It is possible other values needs to be considered in order to glean greater precision, or that a company can make allowances for the expected smaller % of high-risk lenders. 
-A parallel demonstration is assessment of risk in insurance companies. For example, a life insurance company is going to take on high-risk individuals for a premium price, as long as they accept enough applications from the lower-risk pool as offet, or reinsure the risk.
+A parallel demonstration is assessment of risk in insurance companies. For example, a life insurance company is going to take on high-risk individuals at a premium price, as long as they accept enough applications from the lower-risk pool as offet, or reinsure the risk.
 The model does not need to be perfect in accuracy or precision/sensitivity, but it needs to ensure the company can forecast risk appropriately enough to obtain revenue while supporting payout committments. 
  
  
