@@ -24,7 +24,7 @@ Enclosed are the accuracy and precision results of the six models
 
 ![Exhibit3](https://github.com/ljlodl5/Credit_Risk_Analysis/blob/main/Cluster%20Sampling.PNG)
 
-### SMOOTEENN Model
+### SMOTEENN Model
 
 ![Exhibit4](https://github.com/ljlodl5/Credit_Risk_Analysis/blob/main/Smoteen%20Sampling.PNG)
 
