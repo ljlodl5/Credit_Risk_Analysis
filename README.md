@@ -40,8 +40,8 @@ Enclosed are the accuracy and precision results of the six models
 
 ## Summary 
 My opinion is that none of these models are ideal, but all may be adequate for the purpose of extending loans. Part of the issue is that the pool of high-risk applications is considerably lower than that of low risk.
-In the over and under sampling models (SMOTE, Random, Cluster) and over/under sampling model (SMOTEENN) the accuracy does not exceed 70%. Even if we reached close to 100% the high risk loans count would not be that much higher. So one can assume even in the most accurate model, the low-risk category would largely outweigh the high-risk category. 
-In addition, the predictive value is extremely low for high-risk, lending F1 (sensitivity to predictive comparison) to be extremely low for all models when it comes to evaluating high risk so there is a lot of false values occuring, but the pool is virtually skewed toward low-risk creditors regardless. 
+In the over and under sampling models (SMOTE, Random, Cluster) and over/under sampling model (SMOTEENN) the accuracy does not exceed 70%. Even if we reached close to 100% accuracy, the high risk loans count would not be that much higher. So one can assume even in the most accurate model, the low-risk category would largely outweigh the high-risk category. 
+In addition, the precision value is extremely low for high-risk, lending F1 (sensitivity to precision comparison) to be extremely low for all models when it comes to evaluating high risk so there are a lot of false values occuring, but the pool is virtually skewed toward low-risk creditors regardless. 
 The expectation is that a company is trying to make sound loans, or sound terms on loans--not exactly a decision requiring extreme precision or sensitivity.  
 
 This begs the question on how far does a company needs to go in cost/time to find a sensitivity score or F1 high enough for a small pool of high-risk individuals?
