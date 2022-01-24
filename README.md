@@ -1,1 +1,51 @@
 # Credit_Risk_Analysis
+
+## Overview 
+The purpose of the challenge is to use supervised models to determine classification of customer loan risk (low vs. high) in order for an organization to determine whether and under what terms to extend credit to an individual or cohort. 
+Before making that decision, we need to analyze the best predictive and accuracy model in order to ensure that decisions made are based on an appropriate sensitivity (true positives and negatives) and that oversampling or undersampling of data points does not constrain resources (time/$),    
+or muddy the results the company is wishing to exercise.  
+
+As a side note one can liken optimal model selection to making orange juice and having multiple different-sized mesh 'filters' available. The consumer (much like a lower credit risk-adverse organization) may prefer no pulp, or the individual (or higher-risk adverse organization) may prefer pulp. 
+Too much filtering/decisioning, or too little filtering/desisioning, between models (or mesh components) can produce an undesireable result for the consumer/organization. In some cases it may be okay to have false reads/microns of pulp in a pulp free container, or a few high-risk applications amid a low-risk pool. It can become quite expensive and time consuming 
+to manage a model/product with a return that has near 0 parts outside of true positives and negatives. And if the consumer can't feel it between the teeth, well it may be time to pick the mesh filter/model and use it going forward and allow some few false-reads to go through.    
+Therefore, it is important to choose the model that predicts the appropriate dependency in a timely and cost-effective manner.   
+
+## Results 
+Enclosed are the accuracy and predictive results of the six models 
+
+### Random Model
+
+
+### SMOTE Model
+
+
+### Cluster Model
+
+
+### SMOOTEENN Model
+
+
+### Balanced Random Forest 
+
+
+### Easy Ensemble 
+
+
+
+## Summary 
+My opinion is that none of these models are ideal, but all may be adequate for the purpose of extending loans. Part of the issue is that the pool of high-risk applications is considerably lower than that of low risk.
+In the over and under sampling models (SMOTE, Random, Cluster) and over/under sampling model (SMOTEENN) the accuracy does not exceed 70%. Even if we reached close to 100% the high risk loans count would not be that much higher. So one can assume even in the most accurate model, the low-risk category would largely outweigh the high-risk category. 
+In addition, the predictive value is extremely low for high-risk, lending F1 (sensitivity to predictive comparison) to be extremely low for all models when it comes to evaluating high risk so there is a lot of false values occuring, but the pool is virtually skewed toward low-risk creditors regardless. 
+The expectation is a company trying to make sound loans, or sound terms on loans--not exactly a decision requiring extreme predictabilty or sentivity.  
+
+How far does a company need to go in cost/time to find a sensitivity score or F1 high enough for a small pool of high-risk individuals?
+As stated above having microns of pulp among gallons or orange juice can be perfectly adequate for selling 'pulp free' juice. 
+
+When looking at the ensembles: Balanced Random Forest and Easy Ensemble the accuracy rates go up ~80% and 93%, but the predictive score on high risk is low for both, and thus the F1 score remains low as well. 
+If time and cost were not an option and I was an extremely low-risk company, then I may be more inclined to choose the Easy Ensemble model as accuracy and F1 for both low and high risk is a little higher, though it is noteworthy that it takes longer and greater $ for the models to execute and may not be worth the small benefit of a higher prediction or sensivity toward the high-risk pool.
+
+It is possible other values needs to be considered in order to glean greater predictability, or that a company can make allowances for the expected smaller % of high-risk lenders. 
+This is the entire purpose of underwriting and actuarial support in insurance companies. For example a life insurance company is going to take on high risk individuals for a premium price, as long as they accept enough applications from the lower-risk pool as offet, or reinsure the risk.
+The model does not need to be perfect, but it needs to ensure the company can make good decisions on the level in each pool they can absorb in order to bring in revenue and support their payout committments. 
+ 
+ 
